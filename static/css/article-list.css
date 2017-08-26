@@ -1,0 +1,274 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+.main-wrapper{
+    /**设置背景图片,让背景固定*/
+    background: #444 url('../img/banner.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /** 把背景图像扩展至足够大，以使背景图像完全覆盖背景区域 */
+    background-size: cover;
+    /** 设置背景图像的起始位置 */
+    background-position: center center;
+}
+
+header{
+    background: rgba(0,0,0,0.1);
+}
+
+nav{
+    background: transparent;
+    /*background-color: #787878;*/
+    height:50px;
+    position: fixed;
+    right:0px;
+}
+
+nav .logo{
+    position: fixed;
+    left:0px;
+}
+
+nav ul{
+    list-style: none;
+    margin:0;
+    float:right;
+}
+
+nav ul li,nav .logo{
+    display:inline-block;
+    line-height:50px;
+    margin-right: 20px;
+}
+
+nav .logo{
+    float:left;
+    margin-left:20px;
+}
+
+nav .logo a{
+    text-decoration: none;
+    color: #ea6f5a;
+}
+
+
+nav ul li a{
+    display:inline-block;
+    line-height:50px;
+    text-decoration: none;
+    height:50px;
+    color:#fff;
+}
+
+nav ul li a:hover{
+    border-bottom:2px solid  #ff5823;
+
+}
+#banner{
+    /**背景设置成透明*/
+    background: transparent;
+    height:600px;
+    color: #fff;
+}
+
+#banner h1{
+    border-top:1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin:0;
+    padding:10px;
+}
+
+#banner .inner{
+    width:300px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top:160px;
+}
+
+#banner .inner p{
+    /*line-height: 30px;*/
+}
+button{
+    border:none;
+    background-color: #333;
+    color:#eee;
+    padding:10px;
+    border-radius: 5px;
+}
+
+#banner button{
+    padding:10px 40px;
+    background-color: #fa5e2e;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#banner .inner .more{
+    margin-top:150px;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+
+.logo a{
+    color:#fff;
+}
+
+
+
+.hr{
+    width:100px;
+    height:2px;
+    margin:20px auto;
+}
+
+.header-section{
+    text-align: center;
+    background-color: transparent;
+    color: #979797;
+    padding:100px 0;
+}
+
+.header-section .hr{
+    background-color: #818181;
+    width:60%;
+}
+
+.header-section .subheading{
+    font-size: 19px;
+}
+.wrapper{
+    max-width: 1080px;
+    margin:0 auto;
+
+}
+.header-section .icon-group{
+    margin-top:60px;
+}
+.header-section .icon-group .icon{
+    display: inline-block;width: 80px;height: 80px;
+    margin: 20px;transition:0.3s ease-out;
+}
+
+.header-section .icon-group .icon:hover{
+    transform: rotate(360deg) scale(1.4);
+}
+
+footer{
+
+    clear:both;
+    background-color: #1d2033;
+    color:#fff;
+    min-height: 150px;
+    text-align: center;
+}
+
+.share-group{
+
+    display: block;
+
+    margin:0 auto;
+    padding:50px;
+}
+
+.share-group li{
+    display: inline-block;
+    padding:10px;
+}
+
+.copy{
+    padding-bottom:20px;
+}
+
+.article #banner{
+    height:300px;
+}
+
+
+.articlelist #banner{
+    height:350px;
+}
+
+.articlelist #banner{
+    text-align: left;
+}
+
+
+
+.articlelist #banner .inner .info{
+    color: #787878;
+    font-size:1em;
+}
+
+.articlelist ul{
+    margin:0;
+
+}
+
+.list{
+    width:100%;
+
+}
+
+.list{
+
+    background-color: #fff;
+}
+
+
+
+.list .article{
+    width:65%;
+    float:left;
+}
+
+.list .wrap-img{
+    width:35%;
+    float:right;
+    padding-top:10px;
+}
+
+figure{
+
+    display: inline-block;
+    margin:0;
+    padding:30px 0 30px 220px;
+    border-bottom: 1px solid #eee;
+}
+
+figure .subinfo{
+    padding-top:8px;
+    color: #a3a3a3;
+    font-size: 0.9em;
+}
+
+figure .abstract{
+    line-height: 2;
+}
+
+figure .article .title{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #777777;
+}
+
+figcaption .meta a{
+     text-decoration: none;
+     color: #787878;
+     font-size: 0.8em;
+     padding:1px;
+ }
+
+figcaption .meta .view{
+    color: #787878;
+    font-size: 0.8em;
+    padding:1px;
+}

@@ -1,0 +1,295 @@
+
+body,html{
+    margin:0;
+    padding:0;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+
+}
+
+
+
+.main-wrapper{
+    /**设置背景图片,让背景固定*/
+    background: #444 url('../img/banner.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /** 把背景图像扩展至足够大，以使背景图像完全覆盖背景区域 */
+    background-size: cover;
+    /** 设置背景图像的起始位置 */
+    background-position: center center;
+}
+
+/*header{
+    background: rgba(0,0,0,0.1);
+}*/
+
+#banner{
+  background: rgba(0,0,0,0.1);
+}
+
+nav{
+    /*background: transparent;*/
+    /*background-color: #787878;*/
+    height:50px;
+    position: fixed;
+    right:0px;
+}
+
+nav .logo{
+    position: fixed;
+    left:0px;
+}
+
+nav ul{
+    list-style: none;
+    margin:0;
+    float:right;
+}
+
+nav ul li,nav .logo{
+    display:inline-block;
+    line-height:50px;
+    margin-right: 20px;
+}
+
+nav .logo{
+    float:left;
+    margin-left:20px;
+}
+
+nav .logo a{
+    text-decoration: none;
+    color: #ea6f5a;
+}
+
+
+nav ul li a{
+    display:inline-block;
+    line-height:50px;
+    text-decoration: none;
+    height:50px;
+    color:#fff;
+}
+
+nav ul li a:hover{
+   border-bottom:2px solid  #ff5823;
+
+}
+#banner{
+    /**背景设置成透明*/
+    /*background: transparent;*/
+    height:600px;
+    color: #fff;
+}
+
+#banner h1{
+    border-top:1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin:0;
+    padding:10px;
+
+}
+
+#banner .inner{
+    width:300px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top:160px;
+}
+
+#banner .inner p{
+    /*line-height: 30px;*/
+}
+button{
+    border:none;
+    background-color: #333;
+    color:#eee;
+    padding:10px;
+    border-radius: 5px;
+}
+
+#banner button{
+    padding:10px 40px;
+    background-color: #fa5e2e;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#banner .inner .more{
+    margin-top:150px;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+
+.logo a{
+    color:#fff;
+}
+
+
+
+.hr{
+    width:100px;
+    height:2px;
+    margin:20px auto;
+}
+
+.header-section{
+    text-align: center;
+    /*background-color: transparent;*/
+    color: #979797;
+    padding:100px 0;
+}
+
+.header-section .hr{
+    background-color: #818181;
+    width:60%;
+}
+
+.header-section .subheading{
+    font-size: 19px;
+}
+.wrapper{
+    max-width: 1080px;
+    margin:0 auto;
+
+}
+.header-section .icon-group{
+    margin-top:60px;
+}
+.header-section .icon-group .icon{
+    display: inline-block;width: 80px;height: 80px;
+    margin: 20px;transition:0.3s ease-out;
+}
+
+.header-section .icon-group .icon:hover{
+    transform: rotate(360deg) scale(1.4);
+}
+
+
+h2{
+    margin:0;
+
+}
+
+.content-section{
+    text-align: center;
+}
+
+.content-section a{
+    color: #313131;
+    text-decoration: none;
+}
+
+.content-section a:visited {
+    color: #383838;
+}/* 已被访问的链接 */
+
+.content-section .img-section{
+    width:45%;
+
+}
+
+.content-section .text-section{
+    width:55%;
+    position: relative;
+    top:88px;
+
+
+}
+
+
+.text-section p{
+    padding: 20px;letter-spacing: 1px;
+    font-size: 18px;
+    font-family: Georgia;
+}
+
+.text-section > *{max-width:90%;}
+
+.article-preview:nth-child(odd){
+    background-color: #e8f0ff;
+}
+
+.article-preview:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+
+.article-preview .text-section{
+    float: left;font-size: 0;
+}
+
+.article-preview .img-section{
+  float: left;font-size: 0;
+}
+/**
+解决img标签上下出现的间隙：图片文字等内联元素，它默认对齐方式都是和它的父级的 baseline 去进行对齐的，但是对齐的是 baseline，撑开高度的却是元素整体的高度（bottom line），这样肯定就会造成一定的间隙：
+
+	*
+
+		1. display属性设置为：block；
+
+		2.  vertical-align设置为 middle；
+
+		3.  设置浮动；
+
+		4.  父元素把文字大小设成0；
+		*/
+.img-section img{
+    width:100%;
+    vertical-align:middle;
+}
+
+
+
+.text-section h2{font-size:28px;margin-bottom: 10px;}
+
+.text-section p{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+footer{
+    clear:both;
+    background-color: #1d2033;
+    color:#fff;
+    min-height: 150px;
+    text-align: center;
+}
+
+
+
+.share-group{
+    display: block;
+
+    margin:0 auto;
+    padding:50px;
+}
+
+.share-group li{
+    display: inline-block;
+    padding:10px;
+}
+
+.copy{
+    padding-bottom:20px;
+}
+
+
+.content-wrapper{
+    width:1080px;
+    margin:0 auto;
+}
+
+
+
+
+
