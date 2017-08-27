@@ -1,6 +1,6 @@
 <h2>项目介绍</h2>
 
-个人博客,所有数据使用MockJS模拟生成
+天天博客,所有数据使用MockJS模拟生成
 
 <h2>技术栈</h2>
 Vue2.0全家桶+Element-UI+E-Charts
